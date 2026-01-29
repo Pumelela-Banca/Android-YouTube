@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Youtube</string>
     <string name="title_activity_you_tube">YouTubeActivity</string>
+    <string name="refresh_button">REFRESH</string>
 </resources>

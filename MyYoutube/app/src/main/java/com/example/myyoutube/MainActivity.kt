@@ -18,7 +18,11 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.Abs
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 
 
+const val YouTube_VIDEO_ID = "g2JqY6laB7U"
+const val YOUTUBE_PLAYLIST = "PLTo6svdhIL1cxS4ffGueFpVCF756ip-ab"
+
 class MainActivity: AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
@@ -29,8 +33,11 @@ class MainActivity: AppCompatActivity() {
         youtubePlayerView.addYouTubePlayerListener(
             object : AbstractYouTubePlayerListener() {
                 override fun onReady(youTubePlayer: YouTubePlayer) {
-                    youTubePlayer.loadVideo("VIDEO_ID", 0f) }
+                    youTubePlayer.loadVideo(YouTube_VIDEO_ID, 0f) }
             })
+
+        // playlist
+        //youTubePlayer.loadPlaylist(YOUTUBE_PLAYLIST, 0, 0f)
 
 
     }
